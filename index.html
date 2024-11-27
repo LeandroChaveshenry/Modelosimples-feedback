@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Atendimento - Impressão</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script>
+        function imprimir() {
+            window.print(); 
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Formulário de Feedback</h2>
+        <form>
+            <label for="nome">Nome do Operador(a):</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data">Data do Atendimento:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário do Atendimento:</label>
+            <input type="time" id="horario" name="horario" required>
+
+            <label for="tipo">Tipo de Atendimento:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="receptivo">Receptivo</option>
+                <option value="ativo">Ativo</option>
+            </select>
+
+            <label for="observacoes">Observações do Atendimento:</label>
+            <textarea id="observacoes" name="observacoes" rows="4" required></textarea>
+
+            <label for="melhorias">Pontos de Melhoria:</label>
+            <textarea id="melhorias" name="melhorias" rows="4" required></textarea>
+
+            <div class="assinaturas">
+                <div class="assinatura">
+                    <span>Assinatura Coordenação:</span>
+                </div>
+                <div class="assinatura">
+                    <span>Assinatura Supervisão:</span>
+                </div>
+            </div>
+
+            <button type="button" onclick="imprimir()">Imprimir Formulário</button> 
+        </form>
+    </div>
+</body>
+</html>
+

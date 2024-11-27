@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 100px;
+}
+.assinaturas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.assinatura {
+    width: 48%;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+button{
+
+    margin-top: 80px;
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 2px;
+}
+
+
+
+
